@@ -5,19 +5,24 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  background-size: cover;
   background: transparent;
-
+ color: inherit;
 }
 
-
-
 .main {
-  height: 100vh;
-  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
 margin: 0;
-background: linear-gradient(#e66465, #9198e5);
+background: linear-gradient(#e66465, #9198e5) ;
 transition:  all 1.0s ease;
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
 /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,22,121,1) 35%, rgba(0,212,255,1) 100%); */
 /*
 background: linear-gradient( rgba(2,0,36,1) 0%, rgba(149,36,181,1) 91%, rgba(254,191,255,1) 100%); */
