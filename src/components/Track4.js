@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Howl, Howler} from 'howler';
-import Fireworks from "../audio/Fireworks.wav"
+import Fireworks from "../audio/FireWorks.mp3"
 import ReactHowler from 'react-howler'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
