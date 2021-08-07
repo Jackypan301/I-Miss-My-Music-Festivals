@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import '../styles/About.css'
 
 export default class Modal extends React.Component {

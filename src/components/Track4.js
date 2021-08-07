@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import {Howl, Howler} from 'howler';
+import React, {useState} from 'react';
+
 import Fireworks from "../audio/FireWorks.mp3"
 import ReactHowler from 'react-howler'
-import { makeStyles } from '@material-ui/core/styles';
+
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';

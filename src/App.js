@@ -1,6 +1,6 @@
 
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Track1 from './components/Track1.js'
 import Track2 from './components/Track2.js'
 import Track3 from './components/Track3.js'
@@ -10,7 +10,7 @@ import Track6 from './components/Track6.js'
 import About from './components/About.js'
 import Title from './components/Title.js'
 import Spotify from './components/Spotify.js'
-import Logo from '/Users/jackypan/musicplayer/src/hard-stage.gif'
+import Logo from './hard-stage.gif'
 
 function App() {
 
@@ -38,7 +38,7 @@ function App() {
 
     <div className='main-container'>
     <div className='main-container-item'  > <Title />  <Spotify />  </div>
-    <img className='main-container-item' id='main-logo' src={Logo}  />
+    <img className='main-container-item' alt='logo' id='main-logo' src={Logo}  />
 
     <div  className='main-container-item'>
     <Track1  />
