@@ -36,8 +36,8 @@ background: linear-gradient( rgba(2,0,36,1) 0%, rgba(149,36,181,1) 91%, rgba(254
 
 
 .main-container {
-width: 100vh;
-height: 90vh;
+width: 80%;
+height: 80%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
