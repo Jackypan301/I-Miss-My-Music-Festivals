@@ -8,13 +8,15 @@
   background-size: cover;
   background: transparent;
  color: inherit;
+ box-sizing: border-box;
+ overflow:hidden;
 }
 
-.main {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+html, body { margin: 0; padding: 0; }
 
+.main {
+  overflow-x: auto;
+overflow-y: auto;
 margin: 0;
 background: linear-gradient(#e66465, #9198e5) ;
 transition:  all 1.0s ease;
@@ -23,6 +25,7 @@ width: 100%;
 height: 100%;
 left: 0;
 top: 0;
+
 /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,22,121,1) 35%, rgba(0,212,255,1) 100%); */
 /*
 background: linear-gradient( rgba(2,0,36,1) 0%, rgba(149,36,181,1) 91%, rgba(254,191,255,1) 100%); */
@@ -30,31 +33,34 @@ background: linear-gradient( rgba(2,0,36,1) 0%, rgba(149,36,181,1) 91%, rgba(254
 
 
 
-.main-container {
 
+
+.main-container {
+width: 100vh;
+height: 90vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items:center;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
-  margin-left: 0%;
-  margin-right: 0%;
+margin: auto;
+
 }
 
 .main-container-item {
-
+  flex-basis: 100%;
   animation: 1s ease-in 0s 1 slideInFromLeft;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 padding: 2%;
-max-width: 33vh;
+width: 33%;
+margin-left: 2%;
+margin-right: 2%;
 }
 
 #main-logo{
-  width: 80%;
+  width: 100%;
   background: transparent;
 }
 
@@ -78,3 +84,17 @@ max-width: 33vh;
   color:inherit;
 }
 
+@media only screen and (max-width: 800px) {
+
+  .main-container {
+
+    flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  #main-logo{
+    width: 50%;
+    background: transparent;
+  }
+
+}

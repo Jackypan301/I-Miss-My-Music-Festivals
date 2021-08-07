@@ -49,3 +49,12 @@ a { color: inherit; }
     transform: translateY(0);
   }
 }
+
+@media only screen and (max-width: 800px) {
+
+  .modal{
+    height: auto;
+    width: auto;
+  }
+
+}
