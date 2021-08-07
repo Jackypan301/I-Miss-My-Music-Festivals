@@ -1,0 +1,17 @@
+.music-container {
+  display: flex;
+  width: 100vh;
+}
+
+.music-button {
+  border: none;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.music-volume{
+  width: 100%;
+}

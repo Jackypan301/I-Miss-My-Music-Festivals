@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+
+* {
+	font-family: 'MuseoModerno', cursive;
+  font-weight:bold;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  overflow:hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+.main {
+  height: 100vh;
+  width: 100%;
+margin: 0;
+background: linear-gradient(#e66465, #9198e5);
+transition:  all 1.0s ease;
+/* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,22,121,1) 35%, rgba(0,212,255,1) 100%); */
+/*
+background: linear-gradient( rgba(2,0,36,1) 0%, rgba(149,36,181,1) 91%, rgba(254,191,255,1) 100%); */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.main-container {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items:center;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container-item {
+
+  animation: 1s ease-in 0s 1 slideInFromLeft;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+padding: 2%;
+max-width: 33vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#main-logo{
+  width: 80%;
+  background: transparent;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(0);
   }
 }
+
+.main-bttn{
+  animation: 1s ease-in 0s 1 slideInFromTop;
+  margin-left: 90%;
+  width: 10%;
+  border: 1px transparent;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color:inherit;
+}
+
